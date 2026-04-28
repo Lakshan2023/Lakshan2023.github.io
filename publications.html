@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Lakshan Cooray</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .site-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .site-title:hover {
+            text-decoration: underline;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .paper {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .paper:last-child {
+            border-bottom: none;
+        }
+
+        .paper-meta {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            main {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="site-title">Lakshan Cooray</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Publications</h2>
+
+        <div class="paper">
+            <h3>Can Small Language Models Handle Context-Summarized Multi-Turn Customer-Service QA? A Synthetic Data-Driven Comparative Evaluation</h3>
+            <p class="paper-meta">Lakshan Cooray, Deshan Sumanathilaka, Pattigadapa Venkatesh Raju | 2026</p>
+            <p class="paper-meta">Frontiers in Artificial Intelligence (Natural Language Processing)</p>
+            <p>Customer-service question answering systems increasingly rely on conversational language understanding. While Large Language Models achieve strong performance, their high computational cost limits practical use in resource-constrained environments. This study investigates instruction-tuned small language models (SLMs) for context-summarized multi-turn customer-service QA using a synthetic data-driven approach. We introduce a 183K-instance synthetic dataset constructed via a 6-stage pipeline and fine-tune 9 instruction-tuned SLMs across three parameter bands (1-2B, 3-4B, 8B) using QLoRA. Results show notable variation across SLMs, with some models demonstrating near-LLM performance, while others struggle to maintain dialogue continuity and contextual alignment.</p>
+            <p><a href="https://arxiv.org/abs/2602.00665">Pre-print</a> | <a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1804284/abstract">Abstract</a></p>
+        </div>
+
+        <div class="paper">
+            <h3>Monocular Depth Estimation for Autonomous Driving: A Survey on Deep Learning Methods, Multi-Task Learning and Robustness in Real-World Conditions</h3>
+            <p class="paper-meta">Lakshan Cooray, Nipuna Senanayake, Deshan Sumanathilaka | 2026</p>
+            <p class="paper-meta">The Visual Computer (International Journal of Computer Graphics) | Under Review</p>
+            <p>Comprehensive survey covering supervised, self-supervised, transformer-based, and multi-task depth estimation methods for autonomous driving systems. The survey examines recent advances in convolutional neural networks, vision transformers, and attention mechanisms for monocular depth prediction. Includes detailed KITTI benchmark analysis and evaluation protocols under standard and adverse conditions (rain, fog, night driving).</p>
+        </div>
+
+        <div class="paper">
+            <h3>From LLMs to SLMs: Advancements, Challenges and Future Directions of Language Models for Customer Interactions</h3>
+            <p class="paper-meta">Lakshan Cooray, Deshan Sumanathilaka, Pattigadapa Venkatesh Raju | 2025</p>
+            <p class="paper-meta">Natural Language Processing (Cambridge University Press) | Under Review</p>
+            <p>Analysis of the transition from large language models to small language models specifically optimized for customer service applications. The work discusses fundamental trade-offs between model size, inference latency, computational cost, and performance quality for practical deployment in real-world customer service systems. Covers parameter-efficient fine-tuning techniques (QLoRA, LoRA), quantization strategies, and knowledge distillation approaches.</p>
+        </div>
+
+        <div class="paper">
+            <h3>Deep Federated Learning: A Systematic Review of Methods, Applications, and Challenges</h3>
+            <p class="paper-meta">Lakshan Cooray, Janaka Sendanayake, Pramuditha Vithanaarachchi, Y. H. P. P. Priyadarshana | 2025</p>
+            <p class="paper-meta">Frontiers in Computer Science, Volume 7</p>
+            <p>Systematic review examining federated learning methodologies, real-world applications across diverse domains, and current research challenges in distributed machine learning. The review covers foundational federated averaging algorithms, advanced optimization techniques for heterogeneous settings, and privacy-preserving mechanisms including differential privacy. Discusses communication efficiency improvements, handling of non-IID data distributions, and personalization approaches in federated networks.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Lakshan Cooray</p>
+    </footer>
+</body>
+</html>

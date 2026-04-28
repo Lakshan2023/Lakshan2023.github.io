@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Lakshan Cooray</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .site-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .site-title:hover {
+            text-decoration: underline;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            main {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="site-title">Lakshan Cooray</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Sysco Pulse: Graph RAG-Based Analytical Chatbot</h3>
+            <p class="project-meta">NLP / Knowledge Graphs | 2024</p>
+            <p>Graph RAG-based analytical chatbot for customer, vendor, and stock analytics with table generation, visualization (Plotly), and reasoning capabilities using GPT-4.1 and Neo4j. Features include dynamic table generation from queries, interactive Plotly visualizations, and multi-hop reasoning over knowledge graphs. Achieved Second Runner-Up at Codefest 2024 (SLIIT, Sri Lanka).</p>
+            <p><strong>Technologies:</strong> Graph RAG, Neo4j, GPT-4.1, Plotly, Python, Knowledge Graphs, NLP</p>
+        </div>
+
+        <div class="project">
+            <h3>Monocular Depth Estimation Case Study</h3>
+            <p class="project-meta">Computer Vision | 2025</p>
+            <p>Case study on monocular depth estimation using KITTI and Virtual KITTI datasets. Replicated Eigen network and Depth Prediction Transformer models for benchmarking under standard and adverse conditions (rain, fog, low-light scenarios). Includes comprehensive evaluation on KITTI Eigen split with standard metrics.</p>
+            <p><strong>Technologies:</strong> PyTorch, KITTI, Transformers, Computer Vision, Deep Learning</p>
+        </div>
+
+        <div class="project">
+            <h3>SafeGuard: Edge AI-Based Construction Safety Monitoring System</h3>
+            <p class="project-meta">Edge AI / Safety | 2025</p>
+            <p>Edge AI system for construction site entrance featuring facial recognition, personal protective equipment (PPE) detection, and health monitoring on Raspberry Pi. Enables automated worker check-in and real-time safety compliance monitoring. Designed for on-device inference to minimize latency and privacy concerns.</p>
+            <p><strong>Technologies:</strong> Raspberry Pi, Computer Vision, Edge AI, TensorFlow, Facial Recognition</p>
+        </div>
+
+        <div class="project">
+            <h3>FrauxAI: Machine Learning-Based Fraud Detection for Mobile Banking</h3>
+            <p class="project-meta">Machine Learning / Security | 2024</p>
+            <p>Machine learning models for payment fraud detection with facial recognition-based login. Integrated as a mobile banking SDK for deployment in Sri Lankan financial applications. Combines transaction pattern analysis, behavioral biometrics, and facial authentication.</p>
+            <p><strong>Technologies:</strong> Machine Learning, Facial Recognition, Mobile SDK, TensorFlow, Scikit-learn</p>
+        </div>
+
+        <div class="project">
+            <h3>Financial and Non-Financial Data Analytical Chatbot</h3>
+            <p class="project-meta">NLP / Data Analytics | 2024</p>
+            <p>Conversational and analytical chatbot for financial and non-financial data analysis. Built using LB Finance Sri Lanka annual report integration with analytical query capabilities and visualization support. Processes both structured and unstructured data from annual reports.</p>
+            <p><strong>Technologies:</strong> NLP, LLMs, Data Analytics, Python, Financial Analysis</p>
+        </div>
+
+        <div class="project">
+            <h3>Cranium Cryptics: Brain Disease Detection Application</h3>
+            <p class="project-meta">Computer Vision / Medical AI | 2024</p>
+            <p>Web application for detecting tumor, Alzheimer's, and ischemic stroke using CNN models (VGG16, VGG19, ResNet50, EfficientNet) with Flask backend. Provides medical professionals with automated diagnostic support through medical image analysis.</p>
+            <p><strong>Technologies:</strong> CNN, Flask, TensorFlow, Medical AI, Medical Image Analysis</p>
+        </div>
+
+        <div class="project">
+            <h3>Adaptive Genetic Algorithm for Vehicle Routing Problem with Time Windows</h3>
+            <p class="project-meta">Optimization / Algorithms | 2025</p>
+            <p>Adaptive genetic algorithm with machine learning-based parameter control for vehicle routing problem with time windows (VRPTW). Optimizes routes under time window and capacity constraints. Suitable for real-world logistics and delivery optimization applications.</p>
+            <p><strong>Technologies:</strong> Genetic Algorithm, Optimization, Machine Learning, Operations Research</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Lakshan Cooray</p>
+    </footer>
+</body>
+</html>

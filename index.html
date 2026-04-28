@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshan Cooray</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #2c2c2c;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .site-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .site-title:hover {
+            text-decoration: underline;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .social-icons {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            filter: brightness(0) saturate(100%);
+            transition: filter 0.2s;
+        }
+
+        .social-icons a:hover img {
+            filter: brightness(0.3) saturate(100%);
+        }
+
+        .section-divider {
+            border-bottom: 1px solid #ddd;
+            margin: 2.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            main {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="site-title">Lakshan Cooray</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="https://via.placeholder.com/200x200/4A90E2/ffffff?text=Lakshan+Cooray" alt="Lakshan Cooray" style="width: 200px; height: 200px; border-radius: 8px; margin-bottom: 1.5rem;">
+
+        <h1>Lakshan Cooray</h1>
+
+        <p>I am a final-year undergraduate student in Artificial Intelligence and Data Science at the <a href="https://iit.ac.lk">Informatics Institute of Technology</a>, Colombo, Sri Lanka, affiliated with Robert Gordon University, UK. My research focuses on developing and evaluating low-parameterized language models for customer service conversations.</p>
+
+        <p>I have experience in deep learning, NLP, computer vision, and edge AI systems. My work spans instruction-tuning of small language models, knowledge graph construction with retrieval-augmented generation, and edge AI deployment for real-world applications.</p>
+
+        <p>My research is supervised by <a href="https://sumanathilaka.github.io/">Deshan Sumanathilaka</a>.</p>
+
+        <div class="social-icons">
+            <a href="https://github.com/Lakshan2003" title="GitHub">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/lakshan-cooray/" title="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://huggingface.co/Lakshan2003" title="HuggingFace">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace">
+            </a>
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/googlescholar.svg" alt="Google Scholar">
+            </a>
+            <a href="https://www.kaggle.com/lakshan2003" title="Kaggle">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/kaggle.svg" alt="Kaggle">
+            </a>
+            <a href="https://www.researchgate.net/profile/Lakshan-Cooray" title="ResearchGate">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/researchgate.svg" alt="ResearchGate">
+            </a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>Education</h2>
+
+        <h3>2023-2026 | BSc (Hons) Artificial Intelligence & Data Science</h3>
+        <p><strong>Informatics Institute of Technology, Colombo, Sri Lanka</strong></p>
+        <p>Affiliated with Robert Gordon University, UK</p>
+        <p><strong>Thesis:</strong> Developing and Evaluating Low-Parameterized Language Models for Customer Service Client-Agent Conversations</p>
+        <p><strong>Supervisors:</strong> <a href="https://sumanathilaka.github.io/">Deshan Sumanathilaka</a></p>
+
+        <h3>2021-2022 | Foundation Diploma in Computer Science</h3>
+        <p><strong>Australian College of Business Studies, Sri Lanka</strong></p>
+        <p>Affiliated with Edith Cowan College, Australia. Achieved 8 Higher Distinction Passes (HD)</p>
+
+        <h3>2020-2022 | GCE Advanced Level (Physical Science)</h3>
+        <p><strong>Ananda College, Colombo 10, Sri Lanka</strong> | Grade 12-13</p>
+
+        <h3>2009-2020 | GCE Ordinary Level</h3>
+        <p><strong>D.S Senanayake College, Colombo 07, Sri Lanka</strong> | 9A Passes</p>
+
+        <div class="section-divider"></div>
+
+        <h2>Professional Experience</h2>
+
+        <h3>Nov 2024 - May 2025 | Associate Data and AI Engineer</h3>
+        <p><strong>Arimac Lanka (Pvt) Ltd, Sri Lanka</strong> | On-site</p>
+
+        <h3>May 2024 - Nov 2024 | Intern Data and AI</h3>
+        <p><strong>Arimac Lanka (Pvt) Ltd, Colombo, Sri Lanka</strong> | On-site</p>
+
+        <div class="section-divider"></div>
+
+        <h2>Technical Skills</h2>
+        <p>Python, R, Java, LaTeX (Overleaf), TensorFlow, PyTorch, Flask, Fast API, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Edge AI, Large Language Models (LLMs), Small Language Models (SLMs), Prompt Engineering, Power BI, Docker, Git</p>
+    </main>
+
+    <footer>
+        <p>&copy; Lakshan Cooray</p>
+    </footer>
+</body>
+</html>
